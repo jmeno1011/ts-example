@@ -1,6 +1,30 @@
 import Head from 'next/head'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [isLogged, setIsLogged] = useState(false);
+  const [username, setUsername] = useState("");
+  const router = useRouter();
+
+  const logout = () => {
+    localStorage.removeItem("user");
+    setIsLogged(false);
+    router.push("/");
+  };
+
+  useEffect(() => {
+    const logged = localStorage.getItem("user");
+    if (logged) {
+      setIsLogged(true);
+      setUsername(JSON.parse(logged).name);
+    } else {
+      setIsLogged(false);
+    }
+  }, []);
+
+
   return (
     <>
       <Head>
@@ -10,7 +34,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='layout'>
-        main
+        <div className="main-title">
+          <h1>Hello World</h1>
+          {isLogged && <><span>안녕! {username}님</span><button onClick={logout}>Sign Out</button></>}
+        </div>
+        <ul style={{ padding: "1rem" }}>
+          {!isLogged && (
+            <>
+              <li><Link className="link" href={"login"}>Sign In</Link></li>
+              <li><Link className="link" href={"join"}>Sign Up</Link></li>
+            </>
+          )}
+        </ul>
       </main>
     </>
   )

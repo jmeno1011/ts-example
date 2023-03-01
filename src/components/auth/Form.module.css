@@ -1,0 +1,79 @@
+.Main{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.Header{
+    margin: 60px 0 40px;
+    text-align: center;
+    font-size: 3rem;
+}
+.Wrapper {
+    padding: 20px 40px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    line-height: 1.5;
+}
+.FormTitle{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid silver;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+}
+
+.Label_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Label_div label{
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Form input{
+    height: 38px;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    border-radius: 0.25rem;
+    border-style: solid;
+    border-width: 1px;
+}
+.Form button{
+    margin: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.18) 0%, rgba(17,17,17,0.08) 100%);
+    border: 1px solid rgba(22,22,22,0.20);
+}
+.Alert{
+    margin: 2rem auto 1rem;
+    display: block;
+    color: #484F59;
+    text-align: center;
+}
+.Link{
+    margin: 1rem auto 0.5rem auto;
+    display: block;
+    color: #484F59;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
