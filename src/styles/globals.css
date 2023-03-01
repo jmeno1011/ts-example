@@ -64,3 +64,19 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.home{
+  display: inline-block;
+}
+
+li{
+  margin-bottom: 0.25rem;
+}
+
+.counter{
+  padding: 0.5rem 0;
+}
+.counter-btn{
+  margin-right: 0.5rem;
+  padding: 2px 6px;
+}

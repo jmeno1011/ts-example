@@ -48,6 +48,7 @@ export default function Home() {
           <li><Link className='link' href={"counter/01"}>01. Redux를 이용한 Counter</Link></li>
           <li><Link className='link' href={"counter/02"}>02. Redux + custom hook을 이용한 Counter</Link></li>
           <li><Link className='link' href={"todolist/01"}>01. todo-list normal</Link></li>
+          <li><Link className='link' href={"todolist/02"}>02. todo-list redux</Link></li>
         </ul>
       </main>
     </>
