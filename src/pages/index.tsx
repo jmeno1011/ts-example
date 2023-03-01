@@ -45,6 +45,7 @@ export default function Home() {
               <li><Link className="link" href={"join"}>Sign Up</Link></li>
             </>
           )}
+          <li><Link className='link' href={"counter/01"}>01. Redux를 이용한 Counter</Link></li>
         </ul>
       </main>
     </>
